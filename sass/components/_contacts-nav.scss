@@ -1,0 +1,25 @@
+.address {
+  font-style: normal;
+}
+
+.contacts-nav {
+  display: flex;
+}
+
+.contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    --color4: #2196f3;
+  }
+}
+
+.icon-contacts {
+  margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+.team {
+  background-color: $bg-team;
+
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  .text {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+}
+
+.team-list {
+  display: flex;
+
+  & > li {
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.workers {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

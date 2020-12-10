@@ -1,0 +1,25 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  --color5: #afb1b8;
+  background-color: inherit;
+
+  &:hover,
+  &:focus {
+    --color5: #ffffff;
+    background-color: #2196f3;
+  }
+}
