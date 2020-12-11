@@ -64,18 +64,27 @@ textarea {
 
 .checkbox {
   margin-bottom: 30px;
-  padding: 0px 12px;
+  padding: 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 12px;
+  }
 
   &-input {
     appearance: none;
   }
 
   &-label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &-link {
