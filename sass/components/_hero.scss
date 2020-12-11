@@ -20,23 +20,14 @@
     margin-left: auto;
     margin-right: auto;
 
+    font-size: 26px;
+    line-height: 1.62;
+    width: 360px;
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white;
     text-align: center;
-
-    @media screen and (min-width: 480px) {
-      font-size: 26px;
-      line-height: 1.62;
-      width: 360px;
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.62;
-      width: 360px;
-    }
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
