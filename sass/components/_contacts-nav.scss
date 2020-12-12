@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-nav .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .contacts-link {
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
