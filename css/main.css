@@ -59,7 +59,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-@media screen and (mim-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #ececec;
   }
