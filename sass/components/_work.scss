@@ -1,9 +1,13 @@
 .work {
   background-color: $white;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work-list {
-  // display: flex;
+  display: flex;
 
   .item {
     position: relative;

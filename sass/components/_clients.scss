@@ -1,9 +1,10 @@
-// .clients-list {
-//   display: flex;
-// }
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .clients-link {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid $icon-color;
   border-radius: 4px;
@@ -12,9 +13,48 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
   &:hover,
   &:focus {
     --color5: #2196f3;
     border: 1px solid $accent-color;
+  }
+}
+
+.clients-list .item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list .item:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+  .clients-list .item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .clients-list .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list .item {
+    margin-bottom: 0px;
+  }
+  .clients-list .item:not(:last-child) {
+    margin-right: 30px;
   }
 }

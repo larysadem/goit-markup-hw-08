@@ -10,6 +10,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $title-text-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   .text {
@@ -23,20 +27,50 @@
 }
 
 .features-list {
-  // display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .features-list .item,
 .team-list .item {
-  width: calc((100% - 90px) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-list .item:not(:last-child),
-.work-list .item:not(:last-child),
-.team-list .item:not(:last-child),
-.clients-list .item:not(:last-child) {
-  margin-right: 30px;
+.work-list .item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.features-list .item:nth-child(2n-1) {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.features-list .item:nth-last-child(-n + 2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .icon-features {

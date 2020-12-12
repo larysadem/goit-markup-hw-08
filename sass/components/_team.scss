@@ -24,7 +24,15 @@
 }
 
 .team-list {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   & > li {
     background: $white;
@@ -36,5 +44,47 @@
 
 .workers {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.workers-photo {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.team-list .item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.team-list .item:nth-child(2n-1) {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.team-list .item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
