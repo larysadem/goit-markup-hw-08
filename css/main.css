@@ -57,12 +57,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (mim-width: 768px) {
   .header {
-    display: none;
+    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -78,10 +77,25 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
 .second-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -100,6 +114,8 @@ body {
 }
 
 .header .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #000000;
 }
 
@@ -124,10 +140,16 @@ body {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 84px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 84px;
+  }
 }
 
 .site-nav a {
@@ -181,11 +203,17 @@ body {
 }
 
 .contacts-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .contacts-link {
@@ -233,7 +261,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
   .icon-contacts {
     margin-right: 10px;
   }
@@ -245,6 +273,117 @@ body {
     width: 10px;
     height: 16px;
   }
+}
+
+.mobile-menu-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu-button .icon-close {
+  display: none;
+}
+
+.mobile-menu-button:hover .icon-menu,
+.mobile-menu-button:focus .icon-menu,
+.mobile-menu-button:hover .icon-close,
+.mobile-menu-button:focus .icon-close {
+  fill: #2196f3;
+}
+
+.mobile-menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-container {
+  display: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.menu-container.is-open {
+  display: block;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobile-site-list {
+  margin-bottom: 60px;
+}
+
+.mobile-site-list a {
+  display: block;
+  color: #212121;
+}
+
+.mobile-site-list .current {
+  color: #2196f3;
+}
+
+.mobile-site-list .item {
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.mobile-site-list .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-site-list .text {
+  display: inline-block;
+  position: relative;
+  margin-right: 190px;
+  margin-left: 190px;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-contacts-list .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.mobile-site-list .current,
+.mobile-site-list .link:hover .text,
+.mobile-site-list .link:focus .text {
+  padding-bottom: 12px;
+}
+
+.mobile-site-list .text::after,
+.mobile-site-list .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: #2196f3;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-site-list .link:hover .text::after,
+.mobile-site-list .link:focus .text::after,
+.mobile-site-list .current::after {
+  opacity: 1;
 }
 
 .hero {

@@ -3,12 +3,12 @@
 }
 
 .contacts-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
 
-  // @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts-link {
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
   .icon-contacts {
     margin-right: 10px;
   }
