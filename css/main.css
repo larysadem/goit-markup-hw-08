@@ -60,6 +60,12 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,10 +100,23 @@ body {
 }
 
 .header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .web {
@@ -108,6 +127,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 84px;
 }
 
 .site-nav a {
@@ -122,9 +142,16 @@ body {
   color: #2196f3;
 }
 
-.site-nav .item:not(:last-child),
-.contacts-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .link::after,
@@ -157,11 +184,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contacts-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -171,12 +198,53 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts-link:hover, .contacts-link:focus {
   --color4: #2196f3;
 }
 
-.icon-contacts {
-  margin-right: 10px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts-item {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-contacts {
+    margin-right: 8px;
+  }
+  .icon-contacts.envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .icon-contacts.smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-contacts {
+    margin-right: 10px;
+  }
+  .icon-contacts.envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .icon-contacts.smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .hero {

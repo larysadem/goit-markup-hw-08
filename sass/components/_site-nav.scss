@@ -1,6 +1,12 @@
 .site-nav {
   display: flex;
 
+  margin-right: 84px;
+
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+
   & a {
     display: block;
     padding-top: 32px;
@@ -15,9 +21,16 @@
   }
 }
 
-.site-nav .item:not(:last-child),
-.contacts-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .link::after,
