@@ -2,14 +2,23 @@
   background-color: $bg-main;
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
 
   font-size: 14px;
   line-height: 1.71;
 
-  // &-container {
-  //   display: flex;
-  // }
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
+  &-container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 
   .logo {
     color: $white;
@@ -17,7 +26,9 @@
   }
 
   .address {
-    width: 231px;
+    @media screen and (min-width: 768px) {
+      width: 231px;
+    }
   }
 
   .contacts {
@@ -42,10 +53,24 @@
 }
 
 .footer-nav {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 
   & li:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -66,5 +91,27 @@
 }
 
 .footer-social-list {
-  margin-right: 93px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+    margin-right: 93px;
+    margin-top: 12px;
+  }
+}
+
+.footer-subscribe {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-top: 12px;
+  }
 }
