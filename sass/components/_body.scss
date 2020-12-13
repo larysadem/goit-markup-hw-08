@@ -33,8 +33,16 @@ body {
   }
 }
 
-.section {
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .section {
+    min-width: 480px;
+  }
+
+  .hero {
+    min-width: 480px;
+  }
+
+  .footer {
     min-width: 480px;
   }
 }

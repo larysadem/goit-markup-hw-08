@@ -45,6 +45,12 @@ body {
   .section {
     min-width: 480px;
   }
+  .hero {
+    min-width: 480px;
+  }
+  .footer {
+    min-width: 480px;
+  }
 }
 
 .link {
