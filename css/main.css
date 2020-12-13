@@ -24,20 +24,26 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .section {
+  .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .container {
     width: 1200px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    min-width: 480px;
   }
 }
 

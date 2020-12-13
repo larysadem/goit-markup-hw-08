@@ -19,9 +19,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
 
-.section {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -32,6 +30,12 @@ body {
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+
+.section {
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
   }
 }
 
