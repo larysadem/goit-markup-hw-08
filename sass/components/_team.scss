@@ -52,18 +52,9 @@
 }
 
 .workers-photo {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
+  width: 100%;
 }
+
 .team-list .item:not(:last-child) {
   margin-bottom: 30px;
 

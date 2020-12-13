@@ -394,12 +394,7 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    padding: 118px 60px;
-  }
+  padding: 118px 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -421,12 +416,17 @@ body {
   margin-right: auto;
   font-size: 26px;
   line-height: 1.62;
-  width: 360px;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -984,22 +984,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .workers-photo {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .workers-photo {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .workers-photo {
-    width: 270px;
-  }
+.workers-photo {
+  width: 100%;
 }
 
 .team-list .item:not(:last-child) {
