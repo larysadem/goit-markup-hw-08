@@ -53,6 +53,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    min-width: 768px;
+  }
+  .hero {
+    min-width: 768px;
+  }
+  .footer {
+    min-width: 768px;
+  }
+}
+
 .link {
   text-decoration: none;
 }
@@ -364,8 +376,6 @@ body {
 .mobile-site-list .text {
   display: inline-block;
   position: relative;
-  margin-right: 190px;
-  margin-left: 190px;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -376,8 +386,7 @@ body {
 }
 
 .mobile-site-list .current,
-.mobile-site-list .link:hover .text,
-.mobile-site-list .link:focus .text {
+.mobile-site-list .text {
   padding-bottom: 12px;
 }
 
@@ -550,6 +559,13 @@ button {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 100;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 95%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1070,6 +1086,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients-link {

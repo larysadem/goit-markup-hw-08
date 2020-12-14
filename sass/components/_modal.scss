@@ -27,6 +27,11 @@
 
   z-index: 100;
 
+  @media screen and (max-width: 479px) {
+    width: 95%;
+    height: auto;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;

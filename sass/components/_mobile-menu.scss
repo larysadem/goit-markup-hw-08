@@ -71,9 +71,6 @@
     display: inline-block;
     position: relative;
 
-    margin-right: 190px;
-    margin-left: 190px;
-
     font-size: 18px;
     line-height: 1.17;
 
@@ -86,8 +83,7 @@
 }
 
 .mobile-site-list .current,
-.mobile-site-list .link:hover .text,
-.mobile-site-list .link:focus .text {
+.mobile-site-list .text {
   padding-bottom: 12px;
 }
 

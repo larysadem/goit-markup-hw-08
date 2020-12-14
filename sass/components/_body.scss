@@ -47,6 +47,20 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    min-width: 768px;
+  }
+
+  .hero {
+    min-width: 768px;
+  }
+
+  .footer {
+    min-width: 768px;
+  }
+}
+
 .link {
   text-decoration: none;
 }
