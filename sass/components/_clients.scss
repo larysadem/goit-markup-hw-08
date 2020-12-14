@@ -1,7 +1,10 @@
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .clients-link {

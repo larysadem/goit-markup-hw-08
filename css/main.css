@@ -1014,6 +1014,25 @@ img {
 
 .workers-photo {
   width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .workers-photo {
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .workers-photo {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers-photo {
+    height: auto;
+  }
 }
 
 .team-list .item:not(:last-child) {
@@ -1081,14 +1100,17 @@ img {
 }
 
 .clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .clients-link {
